@@ -2,10 +2,17 @@ CC=g++
 CFLAGS=-I ./eigen-3.4.0/ -Wall
 TARGET=assignmentResize FirstProgram matrixVectorIndex \
 resizeNoOp resizing setSizeAtCompileTime sizeSetAtRuntime \
-additionAndSubtraction scalarMultiplicationAndDivision
+additionAndSubtraction scalarMultiplicationAndDivision \
+transpositionAndConjugation matrixMatrixAndMatrixVectorMultiplication \
+dotProductAndCrossProduct arithmeticReductionOperations \
+coefficientArguments arrayIndexing arrayAddSub arrayMultiplication \
+arrayCoefficientOperations
+
+TARGETS=$(wildcard *.cpp)
 
 all: $(TARGET)
+
 $(TARGET):
-	$(CC) $(CFLAGS) $@.cpp -o $@ $^
+	$(CC) $(CFLAGS) src/$@.cpp -o bin/$@ $^
 clean:
-	rm -rf $(TARGET) *.o
+	rm -rf bin/*
