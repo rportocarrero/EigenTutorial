@@ -1,2 +1,2 @@
 # EigenTutorial
- This repo is used to practice dusing the Eigen linear algebra library.
+ This repo is used to practice using the Eigen linear algebra library.
