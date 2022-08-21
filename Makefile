@@ -6,7 +6,7 @@ additionAndSubtraction scalarMultiplicationAndDivision \
 transpositionAndConjugation matrixMatrixAndMatrixVectorMultiplication \
 dotProductAndCrossProduct arithmeticReductionOperations \
 coefficientArguments arrayIndexing arrayAddSub arrayMultiplication \
-arrayCoefficientOperations
+arrayCoefficientOperations arrayMatrixConversions arrayMatrixConversions2 \
 
 TARGETS=$(wildcard *.cpp)
 
